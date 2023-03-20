@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+    <style>
+        html {
+            background: #000;
+			color: #000;
+			font-family: sans-serif;
+			font-size: 0.8em;
+        }
+        #topbar {
+            display: inline-block;
+        }
+		#clockbar {
+            display: inline-block;
+        }
+		a {
+			color: #fff;
+		}
+		#calendar {
+			backround: #eee;
+		}
+		.aa {
+			background: #456;
+			color: #fff;
+			font-size: 1.5em;
+			letter-spacing: 2px;
+			font-weigtht: 900;
+			text-align: center;
+			display: inline flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 128px;
+			width: 128px;
+		}
+		#tool {
+			color: #fff;
+		}
+</style>
+</head>
+
+
+
+<body onload="startTime()">
+
+<div id="topbar">
+	<a href="https://mail.google.com/"><img src="./svg/gmail.svg" alt="gmail"></A>
+	<a href="https://www.amazon.com/"><img src="./svg/amazon.svg" alt="amazon"></A>
+	<a href="https://www.youtube.com/"><img src="./svg/youtube.svg" alt="youtube"></A>
+    <a href="https://aws.amazon.com/console/"><img src="./svg/aws.svg" alt="aws"></A>
+      <a href="https://www.google.com"><img src="./svg/google.svg" alt="GoogleSearch"></A>
+        <a href="https://www.ebay.com"><img src="./svg/ebay.svg" alt="eBay"></A>
+          <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=google+translate"><img src="./svg/translate.svg" alt="GTranslate"></A>
+            <a href="https://chat.openai.com/"><img src="./svg/chatgpt.svg" alt="chatGPT"></A>
+              <a href="https://www.nytimes.com/games/wordle/index.html"><img src="./svg/wordle.svg" alt="Wordle"></A>
+                <a href="https://sfbay.craigslist.org/"><img src="./svg/craigslist.svg" alt="Craigslist"></A>
+                  <a href="https://finance.yahoo.com/quotes/AAPL,AMZN,NVDA,NET,SYY,NIO,TSLA,MSFT,BNTX/view/v1/"><img src="./svg/yahoofin.svg" alt="YFinance"></A>
+                    <a href="https://github.com"><img src="./svg/github.svg"></A>
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="https://www.wikipedia.org"><img src="./wikipedia.png"></A>
+    
+	<a href="https://news.google.com"><img src="./googlenews.png"></A>
+	  <a href="https://keep.google.com"><img src="./keep.png"></A>
+    <a href="https://www.amazon.com/Prime-Video/b?node=2676882011"><img src="./primevideo.png"></A>
+      <a href="https://finance.yahoo.com/quotes/AAPL,AMZN,NVDA,NET,SYY,NIO,TSLA,MSFT,BNTX/view/v1/" alt="Yahoo"><img src="./yahoo_fin.png"></A>
+      
+        
+          <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=run+speed+test"><img src="./speed.png"></A>
+            <a href="https://jsfiddle.net"><img src="./jsfiddle.png"></A>
+
+    <a href="https://maps.google.com"><img src="./googlemaps.png"></A>
+    <a href="https://www.windy.com/-Rain-thunder-rain?rain,37.777,-121.745,9,m:eH1acJA"><img src="./radar.png"></A>
+ 
+    <a href="https://www.homedepot.com"><img src="./homedepot.png"></A>
+    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+berkeley"><img src="./weather_berkeley.png"></A>
+    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+msp"><img src="./weather_msp.png"></A>
+    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+paris"><img src="./weather_paris.png"></A>
+    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+rome"><img src="./weather_rome.png"></A>
+    <a href="https://www.google.com/logos/fnbx/solitaire/standalone.html"><img src="./solitaire.png"></A>
+    <a href="https://www.nytimes.com/games/wordle/index.html"><img src="./wordle.png" alt="Wordle"></A>
+	<a href="https://ca.finance.yahoo.com/portfolios/"><img src="./portfolio.png"></A>
+	<a href="https://azure.microsoft.com/en-us/"><img src="./azure.png"></A>
+	
+	<a href="https://kogswellcycles.com"><img src="./kogs.png"></A>
+    
+    <a href="https://jlcpcb.com"><img src="./jlcpcb.png"></A>
+	<a href="https://www.aliexpress.us/"><img src="./ali.png"></A>
+	<a href="https://www.pythonanywhere.com/user/kogswell/"><img src="./pythonanywhere.png"></A>
+	<a href="https://wormhole.app/"><img src="./wormhole.png"></A>
+</div>
+
+<br><br>
+
+<div id="clockbar">
+
+<div id="berk" style="width: 200px; display: inline-block; font-family: monospace; font-size: 3em; color: #fff"></div>
+<div id="paris" style="display: inline-block; font-family: monospace; font-size: 3em; color: #fff"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  p = checkTime(m);
+  document.getElementById('berk').innerHTML =  h%12 + ":" + m;
+  document.getElementById('paris').innerHTML =  ((h+4)%12) + ":" + m;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+<p id="calendar"> <input type="date"> <p>
+</div>
+
+<div id="tool">
+Tool Library<br>
+510-981-6101<br>
+M 10 - 6<br> 
+T 10 - 6<br> 
+W 12 - 6<br> 
+T 12 - 6<br> 
+F 10 - 6<br> 
+S 10 - 6<br> 
+S Closed
+</div>
+
+
+
+<script>
+</script>
+
+
+</body>
+</html>

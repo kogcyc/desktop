@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xml:space="preserve"
+   width="96"
+   height="96"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="youtube.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs10" /><sodipodi:namedview
+   id="namedview8"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="2.5125861"
+   inkscape:cx="72.634326"
+   inkscape:cy="97.708093"
+   inkscape:window-width="1250"
+   inkscape:window-height="655"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg6" />
+  <rect
+   width="96"
+   height="96"
+   fill="#ffffff"
+   ry="10"
+   id="rect2"
+   x="0"
+   y="0"
+   style="fill:none;stroke-width:0.32"
+   rx="10" />
+  <rect
+   style="fill:#ffffff"
+   id="rect444"
+   width="31.519699"
+   height="27.579737"
+   x="31.519701"
+   y="33.208252"
+   rx="10"
+   ry="10" /><path
+   fill="#ff0000"
+   d="m 47.97746,22.546026 c 0,0 -22.735679,2.3e-5 -28.442032,1.482782 -3.055388,0.853706 -5.571251,3.3696 -6.424957,6.46991 -1.482759,5.70636 -1.48279,17.523759 -1.48279,17.523759 0,0 3.1e-5,11.862259 1.48279,17.478812 0.853706,3.100264 3.324639,5.57122 6.424957,6.424941 5.751283,1.52769 28.442032,1.527744 28.442032,1.527744 0,0 22.780749,-1.5e-5 28.486985,-1.482782 3.100341,-0.853706 5.571223,-3.279747 6.380006,-6.424964 1.527698,-5.661484 1.527736,-17.478789 1.527736,-17.478789 0,0 0.04492,-11.862361 -1.527736,-17.568721 -0.808783,-3.10031 -3.279665,-5.571219 -6.380006,-6.379994 C 70.758209,22.546103 47.97746,22.546026 47.97746,22.546026 Z M 40.743325,37.104203 59.659957,48.022477 40.743325,58.895804 Z"
+   id="path4"
+   style="stroke-width:0.359635" />
+</svg>

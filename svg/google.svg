@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 48 48"
+   width="96"
+   height="96"
+   version="1.1"
+   id="svg2159"
+   sodipodi:docname="google.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2161"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.1640625"
+     inkscape:cx="34.461538"
+     inkscape:cy="64.4803"
+     inkscape:window-width="1250"
+     inkscape:window-height="655"
+     inkscape:window-x="64"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2159" />
+  <defs
+     id="defs2144">
+    <path
+       id="A"
+       d="M 44.5,20 H 24 v 8.5 H 35.8 C 34.7,33.9 30.1,37 24,37 16.8,37 11,31.2 11,24 c 0,-7.2 5.8,-13 13,-13 3.1,0 5.9,1.1 8.1,2.9 L 38.5,7.5 C 34.6,4.1 29.6,2 24,2 11.8,2 2,11.8 2,24 c 0,12.2 9.8,22 22,22 11,0 21,-8 21,-22 0,-1.3 -0.2,-2.7 -0.5,-4 z" />
+  </defs>
+  <clipPath
+     id="B">
+    <use
+       xlink:href="#A"
+       id="use2146" />
+  </clipPath>
+  <rect
+     style="fill:none;stroke-width:0.62203"
+     id="rect358"
+     width="48"
+     height="48"
+     x="0"
+     y="0"
+     rx="5"
+     ry="5" />
+  <g
+     transform="matrix(0.60739235,0,0,0.60739235,9.7262796,9.4225835)"
+     id="g2157">
+    <path
+       d="M 0,37 V 11 l 17,13 z"
+       clip-path="url(#B)"
+       fill="#fbbc05"
+       id="path2149" />
+    <path
+       d="M 0,11 17,24 24,17.9 48,14 V 0 H 0 Z"
+       clip-path="url(#B)"
+       fill="#ea4335"
+       id="path2151" />
+    <path
+       d="M 0,37 30,14 37.9,15 48,0 V 48 H 0 Z"
+       clip-path="url(#B)"
+       fill="#34a853"
+       id="path2153" />
+    <path
+       d="M 48,48 17,24 13,21 48,11 Z"
+       clip-path="url(#B)"
+       fill="#4285f4"
+       id="path2155" />
+  </g>
+</svg>
