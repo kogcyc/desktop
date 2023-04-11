@@ -17,12 +17,17 @@
 			font-family: sans-serif;
 			font-size: 0.8em;
         }
-        #topbar {
-            display: inline-block;
-        }
-		#clockbar {
-            display: inline-block;
-        }
+.time {
+  background-color: #fff;
+  color: #000;
+  padding: 1px 6px;
+  font-family: monospace;
+  font-size: 1.4em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
 		a {
 			color: #fff;
 		}
@@ -106,29 +111,39 @@
 
 <br><br>
 
-<div id="clockbar">
-
-<div id="berk" style="width: 200px; display: inline-block; font-family: monospace; font-size: 3em; color: #fff"></div>
-<div id="paris" style="display: inline-block; font-family: monospace; font-size: 3em; color: #fff"></div>
+<span class="time" id="berkeley"></span> <span class="time" id="paris"></span>
 
 <script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  p = checkTime(m);
-  document.getElementById('berk').innerHTML =  h%12 + ":" + m;
-  document.getElementById('paris').innerHTML =  ((h+4)%12) + ":" + m;
-  setTimeout(startTime, 1000);
-}
+  function isDST() {
+    const today = new Date();
+    const january = new Date(today.getFullYear(), 0, 1);
+    const july = new Date(today.getFullYear(), 6, 1);
+    const stdTimezoneOffset = Math.max(january.getTimezoneOffset(), july.getTimezoneOffset());
+    const isDST = today.getTimezoneOffset() < stdTimezoneOffset;
+    return isDST;
+  }
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
+  const now = new Date();
+
+  var offset = -15;
+  if (isDST()) {
+    var offset = -14;
+  } 
+  var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  var offsetTime = new Date(utc + (3600000 * offset));
+  var timeDiv = document.getElementById("berkeley");
+  var hour = offsetTime.getUTCHours().toString().padStart(2, '0');
+  var minute = offsetTime.getUTCMinutes().toString().padStart(2, '0');
+  timeDiv.innerHTML = `${hour}:${minute}`;
+
+  var offset = -5; // Replace with your desired offset in hours
+  var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  var offsetTime = new Date(utc + (3600000 * offset));
+  var timeDiv = document.getElementById("paris");
+  var hour = offsetTime.getUTCHours().toString().padStart(2, '0');
+  var minute = offsetTime.getUTCMinutes().toString().padStart(2, '0');
+  timeDiv.innerHTML = `${hour}:${minute}`;
+
 </script>
 
 
