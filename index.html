@@ -63,7 +63,7 @@
           <circle cx="50" cy="50" r="45" fill="#222" />
           <line id="hourHand" x1="50" y1="50" x2="50" y2="24" stroke="#222" stroke-width="4" />
           <line id="minuteHand" x1="50" y1="50" x2="50" y2="14" stroke="#222" stroke-width="4" />
-          <circle cx="50" cy="50" r="3" fill="#222" />
+          <circle id="redCircleElement" cx="50" cy="50" r="3" fill="#222" />
           <line id="secondHand" x1="50" y1="55" x2="50" y2="10" stroke="#222" stroke-width="2" />
         </svg>
 
@@ -185,7 +185,7 @@
         var hourHandElement = document.getElementById('hourHand');
         var minuteHandElement = document.getElementById('minuteHand');
         var secondHandElement = document.getElementById('secondHand');
-        var redCircleElement = document.querySelector('circle[fill="#f00"]');
+        var redCircleElement = document.getElementById('redCircleElement');
 
         // Set the 'fill' attribute for each element
         //circleElement.setAttribute('fill', '#222'); // replace '#your_fill_color' with the desired color
