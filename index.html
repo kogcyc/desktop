@@ -63,7 +63,6 @@
           <circle cx="50" cy="50" r="45" fill="#222" />
           <line id="hourHand" x1="50" y1="50" x2="50" y2="24" stroke="#222" stroke-width="4" />
           <line id="minuteHand" x1="50" y1="50" x2="50" y2="14" stroke="#222" stroke-width="4" />
-          
           <line id="secondHand" x1="50" y1="55" x2="50" y2="10" stroke="#222" stroke-width="2" />
         </svg>
 
@@ -180,19 +179,15 @@
         minuteHand.setAttribute('transform', `rotate(${minutesAngle} 50 50)`);
         hourHand.setAttribute('transform', `rotate(${hoursAngle} 50 50)`);
 
-        // Get the SVG elements using their IDs or tags
-        //var circleElement = document.querySelector('circle');
-        var hourHandElement = document.getElementById('hourHand');
-        var minuteHandElement = document.getElementById('minuteHand');
-        var secondHandElement = document.getElementById('secondHand');
-        //var redCircleElement = document.getElementById('redCircleElement');
+    // Get the elements by their IDs
+    var hourHand = document.getElementById("hourHand");
+    var minuteHand = document.getElementById("minuteHand");
+    var secondHand = document.getElementById("secondHand");
 
-        // Set the 'fill' attribute for each element
-        //circleElement.setAttribute('fill', '#222'); // replace '#your_fill_color' with the desired color
-        hourHandElement.setAttribute('fill', '#fff');
-        minuteHandElement.setAttribute('fill', '#fff');
-        secondHandElement.setAttribute('fill', '#f00');
-        //redCircleElement.setAttribute('fill', '#f00');
+    // Change the 'stroke' color
+    hourHand.setAttribute("stroke", "#fff"); // Change to your desired color
+    minuteHand.setAttribute("stroke", "#fff"); // Change to your desired color
+    secondHand.setAttribute("stroke", "#f00"); // Change to your desired color
 
         
       }
