@@ -196,6 +196,16 @@
 
     </script>
 
+    
+    <input type="text" id="inputField" placeholder="">
+    <button onclick="loadUrl()">go</button>
+    <script>
+        function loadUrl() {
+            var inputValue = document.getElementById('inputField').value;
+            var url = 'https://' + inputValue + '.up.railway.app';
+            window.location.href = url;
+        }
+    </script>
 
 
   </body>
