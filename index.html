@@ -1,220 +1,179 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      html {
-        background: #000;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 0.8em;
-      }
-
-          <% if (other_background) { %>
+  <style>
     html {
-      background: <%= other_background %>;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 0.8em;
     }
-    <% } %>
 
-      .timedate {
-        background-color: #fff;
-        https: //raw.githubusercontent.com/kogcyc/files/main/json.json 
-          color: #000;
-        padding: 1px 6px;
-        font-family: monospace;
-        font-size: 1.4em;
-        font-weight: 900;
-        letter-spacing: 2px;
-        border-radius: 4px;
-        margin-right: 20px;
-        border: none;
-        outline: none;
-      }
+    .timedate {
+      background-color: #fff;
+      color: #000;
+      padding: 1px 6px;
+      font-family: monospace;
+      font-size: 1.4em;
+      font-weight: 900;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      margin-right: 20px;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
 
-      a {
-        color: #fff;
-      }
+    a {
+      color: #fff;
+    }
 
-      #calendar {
-        backround: #eee;
-      }
+    .aa {
+      background: #456;
+      color: #fff;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-weight: 900;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 128px;
+      width: 12em;
+    }
 
-      .aa {
-        background: #456;
-        color: #fff;
-        font-size: 1.5em;
-        letter-spacing: 2px;
-        font-weight: 900;
-        text-align: center;
-        display: inline flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 128px;
-        width: 12
-      }
+    img {
+      height: 24px;
+      margin: 4px;
+    }
+  </style>
+</head>
 
-    </style>
+<body>
 
-  </head>
+  <div id="topbar">
+    <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+      <circle cx="50" cy="50" r="45" fill="#222" />
+      <line id="hourHand" x1="50" y1="50" x2="50" y2="24" stroke="#222" stroke-width="4" />
+      <line id="minuteHand" x1="50" y1="50" x2="50" y2="14" stroke="#222" stroke-width="4" />
+      <line id="secondHand" x1="50" y1="55" x2="50" y2="10" stroke="#222" stroke-width="2" />
+    </svg>
 
-  <body onload="">
-    <div id="topbar">
-      <span>
+    <!-- Some service links -->
+    <a href="https://mail.google.com/"><img src="./svg/gmail.svg" alt="Gmail"></a>
+    <a href="https://www.amazon.com/"><img src="./svg/amazon.svg" alt="Amazon"></a>
+    <a href="https://chat.openai.com/"><img src="./svg/chatgpt.svg" alt="ChatGPT"></a>
+    <a href="https://github.com"><img src="./svg/github.svg" alt="GitHub"></a>
+  </div>
 
-        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-          <circle cx="50" cy="50" r="45" fill="#222" />
-          <line id="hourHand" x1="50" y1="50" x2="50" y2="24" stroke="#222" stroke-width="4" />
-          <line id="minuteHand" x1="50" y1="50" x2="50" y2="14" stroke="#222" stroke-width="4" />
-          <line id="secondHand" x1="50" y1="55" x2="50" y2="10" stroke="#222" stroke-width="2" />
-        </svg>
+  <br><br>
 
-      </span>
-      <a href="https://mail.google.com/"><img src="./svg/gmail.svg" alt="gmail"></a>
-      <a href="https://www.amazon.com/"><img src="./svg/amazon.svg" alt="amazon"></a>
-      <a href="https://www.youtube.com/"><img src="./svg/youtube.svg" alt="youtube"></a>
-      <a href="https://aws.amazon.com/console/"><img src="./svg/aws.svg" alt="aws"></a>
-      <a href="https://www.google.com"><img src="./svg/google.svg" alt="GoogleSearch"></a>
-      <a href="https://www.ebay.com"><img src="./svg/ebay.svg" alt="eBay"></a>
-      <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=google+translate"><img src="./svg/translate.svg" alt="GTranslate"></a>
-      <a href="https://chat.openai.com/"><img src="./svg/chatgpt.svg" alt="chatGPT"></a>
-      <a href="https://www.nytimes.com/games/wordle/index.html"><img src="./svg/wordle.svg" alt="Wordle"></a>
-      <a href="https://sfbay.craigslist.org/"><img src="./svg/craigslist.svg" alt="Craigslist"></a>
-      <a href="https://finance.yahoo.com/quotes/SPY,AAPL,AMZN,NVDA,NET,SYY,NIO,TSLA,MSFT,BNTX,LMT,TXT,RTX,BA,GD/view/v1/"><img src="./svg/yahoofin.svg" alt="YFinance"></a>
-      <a href="https://github.com"><img src="./svg/github.svg"></a>
-      <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=run+speed+test"><img src="./svg/speed.svg"></a>
-      <a href="https://jsfiddle.net"><img src="./svg/jsfiddle.svg"></a>
-      <a href="https://www.google.com/logos/fnbx/solitaire/standalone.html"><img src="./svg/solitaire.svg"></a>
-      <a href="https://kogcyc.github.io/files/segno.html"><img src="./svg/segno.svg"></a>
-      <a href="https://www.google.com/maps"><img src="./svg/maps.svg"></a>
-      <a href="https://kogcyc.github.io/kogapps/htmlFiddle/"><img src="./svg/htmlFiddle.svg"></a>
-      <a href="https://kogcyc.github.io/kogapps/svgFiddle/"><img src="./svg/svgFiddle.svg"></a>
-      <a href="https://www.mpb.com"><img src="./svg/mpb.svg"></a>
-    </div>
-    <br><br>
-    <span class="timedate" id="berkeley"></span> <span class="timedate" id="paris"></span><br><br>
-    <script>
-      function isDST() {
-        const today = new Date();
-        const january = new Date(today.getFullYear(), 0, 1);
-        const july = new Date(today.getFullYear(), 6, 1);
-        const stdTimezoneOffset = Math.max(january.getTimezoneOffset(), july.getTimezoneOffset());
-        const isDST = today.getTimezoneOffset() < stdTimezoneOffset;
-        return isDST;
-      }
+  <!-- Time Displays -->
+  <span class="timedate" id="berkeley"></span>
+  <span class="timedate" id="paris"></span>
+  <span class="timedate" id="tokyoTimeWeather">Loading Tokyo weather...</span>
+  <br><br>
 
+  <!-- Optional Date Picker -->
+  <input type="date" class="timedate"><br><br>
+
+  <!-- Clock logic -->
+  <script>
+    function isDST() {
+      const today = new Date();
+      const jan = new Date(today.getFullYear(), 0, 1);
+      const jul = new Date(today.getFullYear(), 6, 1);
+      return today.getTimezoneOffset() < Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+    }
+
+    function displayTime(id, offset) {
       const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const time = new Date(utc + (3600000 * offset));
+      const hour = time.getUTCHours().toString().padStart(2, '0');
+      const minute = time.getUTCMinutes().toString().padStart(2, '0');
+      document.getElementById(id).innerText = `${id.charAt(0).toUpperCase() + id.slice(1)}: ${hour}:${minute}`;
+    }
 
-      var offset = -15;
-      if (isDST()) {
-        var offset = -14;
+    const berkeleyOffset = isDST() ? -7 : -8;
+    const parisOffset = isDST() ? 2 : 1;
+
+    displayTime("berkeley", berkeleyOffset);
+    displayTime("paris", parisOffset);
+  </script>
+
+  <!-- SVG Clock Update -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours = now.getHours();
+
+      const secondsAngle = (seconds / 60) * 360;
+      const minutesAngle = ((minutes * 60 + seconds) / 3600) * 360;
+      const hoursAngle = ((hours * 3600 + minutes * 60 + seconds) / 43200) * 360;
+
+      document.getElementById('secondHand').setAttribute('transform', `rotate(${secondsAngle} 50 50)`);
+      document.getElementById('minuteHand').setAttribute('transform', `rotate(${minutesAngle} 50 50)`);
+      document.getElementById('hourHand').setAttribute('transform', `rotate(${hoursAngle} 50 50)`);
+
+      document.getElementById("hourHand").setAttribute("stroke", "#fff");
+      document.getElementById("minuteHand").setAttribute("stroke", "#fff");
+      document.getElementById("secondHand").setAttribute("stroke", "#f00");
+    }
+
+    setInterval(updateClock, 1000);
+  </script>
+
+  <!-- Tokyo Weather -->
+  <script>
+    function updateTokyoTimeWeather() {
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const tokyoOffset = 9; // UTC+9
+      const tokyoTime = new Date(utc + (3600000 * tokyoOffset));
+      const hours = tokyoTime.getHours().toString().padStart(2, '0');
+      const minutes = tokyoTime.getMinutes().toString().padStart(2, '0');
+      const timeString = `${hours}:${minutes}`;
+
+      const apiKey = '04c26f3853be98c54d221b0b4901ffce'; // <-- Replace this!
+      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Tokyo&units=metric&appid=${apiKey}`;
+
+      fetch(weatherUrl)
+        .then(response => response.json())
+        .then(data => {
+          const temp = Math.round(data.main.temp);
+          const weather = data.weather[0].main;
+          const weatherText = `Tokyo: ${timeString}, ${temp}°C, ${weather}`;
+          document.getElementById('tokyoTimeWeather').innerText = weatherText;
+        })
+        .catch(err => {
+          console.error("Weather error:", err);
+          document.getElementById('tokyoTimeWeather').innerText = `Tokyo: ${timeString}, Weather unavailable`;
+        });
+    }
+
+    updateTokyoTimeWeather();
+    setInterval(updateTokyoTimeWeather, 600000); // every 10 mins
+  </script>
+
+  <!-- URL launcher -->
+  <input type="text" id="inputField" placeholder="Enter subdomain">
+  <button onclick="loadUrl()">Go</button>
+  <script>
+    function loadUrl() {
+      const val = document.getElementById('inputField').value.trim();
+      if (val) {
+        window.location.href = `https://${val}.up.railway.app`;
       }
-      var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-      var offsetTime = new Date(utc + (3600000 * offset));
-      var timeDiv = document.getElementById("berkeley");
-      var hour = offsetTime.getUTCHours().toString().padStart(2, '0');
-      var minute = offsetTime.getUTCMinutes().toString().padStart(2, '0');
-      timeDiv.innerHTML = `${hour}:${minute}`;
+    }
+  </script>
 
-      var offset = -5; // Replace with your desired offset in hours
-      var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-      var offsetTime = new Date(utc + (3600000 * offset));
-      var timeDiv = document.getElementById("paris");
-      var hour = offsetTime.getUTCHours().toString().padStart(2, '0');
-      var minute = offsetTime.getUTCMinutes().toString().padStart(2, '0');
-      timeDiv.innerHTML = `${hour}:${minute}`;
-
-    </script>
-
-    <input type="date" class="timedate"> <br><br>
-
-    <div id="tool">
-      Tool Library<br>
-      510-981-6101<br>
-      M 10 - 6<br>
-      T 10 - 6<br>
-      W 12 - 6<br>
-      T 12 - 6<br>
-      F 10 - 6<br>
-      S 10 - 6<br>
-      S Closed
-    </div><br /><br />
-
-    <a href="https://raw.githubusercontent.com/kogcyc/files/main/json.json">files</a><br /><br /><br /><br />
-
-    <img src="./svg/matt.svg" style="display: block; margin-left: auto; margin-right: auto; width: 92%; max-width: 350px;">
-
-    <a href="https://www.wikipedia.org"><img src="./svg/blank.svg"></a>
-    <a href="https://news.google.com"><img src="./svg/blank.svg"></a>
-    <a href="https://keep.google.com"><img src="./svg/blank.svg"></a>
-    <a href="https://www.amazon.com/Prime-Video/b?node=2676882011"><img src="./svg/blank.svg"></a>
-    <a href="https://maps.google.com"><img src="./svg/blank.svg"></a>https://raw.githubusercontent.com/kogcyc/files/main/json.json
-    <a href="https://www.windy.com/-Rain-thunder-rain?rain,37.777,-121.745,9,m:eH1acJA"><img src="./svg/blank.svg"></a>
-    <a href="https://www.homedepot.com"><img src="./svg/blank.svg"></a>
-    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+berhttps://raw.githubusercontent.com/kogcyc/files/main/json.json keley"><img src="./svg/blank.svg"></a>
-    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+msp"><img src="./svg/blank.svg"></a>
-    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+paris"><img src="./svg/blank.svg"></a>
-    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+rome"><img src="./svg/blank.svg"></a>
-    <a href="https://azure.microsoft.com/en-us/"><img src="./svg/blank.svg"></a>
-    <a href="https://kogswellcycles.com"><img src="./svg/blank.svg"></a>
-    <a href="https://jlcpcb.com"><img src="./svg/blank.svg"></a>
-    <a href="https://www.aliexpress.us/"><img src="./svg/blank.svg"></a>
-    <a href="https://www.pythonanywhere.com/user/kogswell/"><img src="./svg/blank.svg"></a>
-    <a href="https://wormhole.app/"><img src="./svg/blank.svg"></a>
-
-
-    <script>
-      function updateClock() {
-        const now = new Date();
-
-        const secondHand = document.getElementById('secondHand');
-        const minuteHand = document.getElementById('minuteHand');
-        const hourHand = document.getElementById('hourHand');
-
-        const seconds = now.getSeconds();
-        const minutes = now.getMinutes();
-        const hours = now.getHours();
-
-        const secondsAngle = (seconds / 60) * 360;
-        const minutesAngle = ((minutes * 60 + seconds) / 3600) * 360;
-        const hoursAngle = ((hours * 3600 + minutes * 60 + seconds) / 43200) * 360;
-
-        secondHand.setAttribute('transform', `rotate(${secondsAngle} 50 50)`);
-        minuteHand.setAttribute('transform', `rotate(${minutesAngle} 50 50)`);
-        hourHand.setAttribute('transform', `rotate(${hoursAngle} 50 50)`);
-
-    // Get the elements by their IDs
-    //var hourHand = document.getElementById("hourHand");
-    //var minuteHand = document.getElementById("minuteHand");
-    //var secondHand = document.getElementById("secondHand");
-
-    // Change the 'stroke' color
-    hourHand.setAttribute("stroke", "#fff"); // Change to your desired color
-    minuteHand.setAttribute("stroke", "#fff"); // Change to your desired color
-    secondHand.setAttribute("stroke", "#f00"); // Change to your desired color
-
-        
-      }
-
-      setInterval(updateClock, 1000);
-
-    </script>
-
-    
-    <input type="text" id="inputField" placeholder="">
-    <button onclick="loadUrl()">go</button>
-    <script>
-        function loadUrl() {
-            var inputValue = document.getElementById('inputField').value;
-            var url = 'https://' + inputValue + '.up.railway.app';
-            window.location.href = url;
-        }
-    </script>
-
-
-  </body>
-
+</body>
 </html>
