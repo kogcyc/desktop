@@ -116,26 +116,43 @@
       /></a>
       <a href="https://www.mpb.com"><img src="./svg/mpb.svg" /></a>
    
-        <a href="https://example.com" aria-label="wiggly link">
+       
+      
+      
+      
+      
+      
+      
+      
+      
+<a href="https://example.com" aria-label="wiggly link">
   <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-    <path id="curve" d="M 6,48 C 48,48 48,48 90,48"
-          fill="none" stroke="#490" stroke-width="12" stroke-linecap="round" />
+    <path id="curve" d="M 6,48 C 48,2 48,94 90,48"
+          fill="none" stroke="#490" stroke-width="10" stroke-linecap="round" />
   </svg>
+
 
 <script>
 (() => {
   const path = document.getElementById('curve');
 
   const minY = 2, maxY = 94;
-  let y1 = 48, y2 = 48; // start values (your current handles)
-  const tickMs = 1000 / 6; // 6 times per second
+  let y1 = 2, y2 = 94; // initial handle y's
+  const tickMs = 1000 / 6; // 6 Hz
 
-  const randStep = () => [-2, 7, 1, 1, -9, -2, -7][(Math.random() * 5) | 0];
+  const randStep = () => [-2, -1, 0, 1, 3][(Math.random() * 5) | 0];
   const clamp = v => Math.max(minY, Math.min(maxY, v));
 
   function update() {
-    y1 = clamp(y1 + randStep());
-    y2 = clamp(y2 + randStep());
+    // randomly pick which handle to move this tick
+    const pickFirst = Math.random() < 0.5;
+
+    if (pickFirst) {
+      y1 = clamp(y1 + randStep());
+    } else {
+      y2 = clamp(y2 + randStep());
+    }
+
     path.setAttribute('d', `M 6,48 C 48,${y1} 48,${y2} 90,48`);
   }
 
@@ -143,7 +160,16 @@
 })();
 </script>
 
-      </a>
+</a>
+
+
+
+
+
+
+
+
+      
     </div>
     <br /><br />
 
