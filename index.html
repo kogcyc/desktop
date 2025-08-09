@@ -115,8 +115,34 @@
         ><img src="./svg/svgFiddle.svg"
       /></a>
       <a href="https://www.mpb.com"><img src="./svg/mpb.svg" /></a>
-      <a>
-        <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg"><path d="M 6,48 C 48,2 48,94 90,48"style="fill:none;stroke:#490;stroke-width:12;stroke-linecap:round" /></svg>
+   
+        <a href="https://example.com" aria-label="wiggly link">
+  <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+    <path id="curve" d="M 6,48 C 48,48 48,48 90,48"
+          fill="none" stroke="#490" stroke-width="12" stroke-linecap="round" />
+  </svg>
+
+<script>
+(() => {
+  const path = document.getElementById('curve');
+
+  const minY = 2, maxY = 94;
+  let y1 = 48, y2 = 48; // start values (your current handles)
+  const tickMs = 1000 / 6; // 6 times per second
+
+  const randStep = () => [-2, 7, 1, 1, -9, -2, -7][(Math.random() * 5) | 0];
+  const clamp = v => Math.max(minY, Math.min(maxY, v));
+
+  function update() {
+    y1 = clamp(y1 + randStep());
+    y2 = clamp(y2 + randStep());
+    path.setAttribute('d', `M 6,48 C 48,${y1} 48,${y2} 90,48`);
+  }
+
+  setInterval(update, tickMs);
+})();
+</script>
+
       </a>
     </div>
     <br /><br />
@@ -164,7 +190,7 @@
     <a
       href="https://www.windy.com/-Rain-thunder-rain?rain,37.777,-121.745,9,m:eH1acJA"
       ><img src="./svg/blank.svg"
-    /></a>
+    /></a><svg width="96" height="96" xmlns="http://www.w3.org/2000/svg"><path d="M 6,48 C 48,2 48,94 90,48"s
     <a href="https://www.homedepot.com"><img src="./svg/blank.svg" /></a>
     <a
       href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+berhttps://raw.githubusercontent.com/kogcyc/files/main/json.json keley"
