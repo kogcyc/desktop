@@ -125,55 +125,7 @@
       
       
       
-<a href="https://example.com" aria-label="wiggly link">
-  <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-    <path id="curve" d="M 6,48 C 48,2 48,94 90,48"
-          fill="none" stroke="#490" stroke-width="12" stroke-linecap="round" />
-  </svg>
-
-
-<script>
-(() => {
-  const path = document.getElementById('curve');
-
-  // Handle positions
-  const minY = 2, maxY = 94;
-  let y1 = 2, y2 = 94;
-  const tickMs = 1000 / 6;
-
-  const randStep = () => [-1, 3, -3, 1, 2][(Math.random() * 5) | 0];
-  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
-
-  // Stroke color as RGB array (initially #490 → 0x44, 0x99, 0x00)
-  let strokeRGB = [0x44, 0x99, 0x00];
-
-  function rgbToHex(rgb) {
-    return '#' + rgb.map(v => v.toString(16).padStart(2, '0')).join('');
-  }
-
-  function update() {
-    // --- Move one handle ---
-    if (Math.random() < 0.5) {
-      y1 = clamp(y1 + randStep(), minY, maxY);
-    } else {
-      y2 = clamp(y2 + randStep(), minY, maxY);
-    }
-
-    path.setAttribute('d', `M 6,48 C 48,${y1} 48,${y2} 90,48`);
-
-    // --- Change one color channel ---
-    const channel = (Math.random() * 3) | 0; // pick 0,1,2
-    const delta = Math.random() < 0.5 ? -14 : 15;
-    strokeRGB[channel] = clamp(strokeRGB[channel] + delta, 0, 255);
-    path.setAttribute('stroke', rgbToHex(strokeRGB));
-  }
-
-  setInterval(update, tickMs);
-})();
-</script>
-
-
-</a>
+<a href="https://www.kogswellcycles.com"><img src="./svg/blur.svg" /></a>
 
 
 
