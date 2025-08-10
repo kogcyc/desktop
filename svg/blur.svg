@@ -1,0 +1,16 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip">
+      <circle cx="48" cy="48" r="45"/>
+    </clipPath>
+  </defs>
+
+  <foreignObject x="3" y="3" width="90" height="90" clip-path="url(#clip)">
+    <div xmlns="http://www.w3.org/1999/xhtml"
+         style="width:90px;height:90px;border-radius:50%;
+                background: conic-gradient(
+                  red, yellow, lime, cyan, blue, magenta, red
+                );">
+    </div>
+  </foreignObject>
+</svg>
