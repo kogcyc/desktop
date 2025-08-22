@@ -248,6 +248,12 @@
       setInterval(updateClock, 1000)
     </script>
 
+
+  <script>
+    const today = new Date().getDate().toString().padStart(2, "0");
+    document.getElementById("dayText").textContent = today;
+  </script>
+
     <input type="text" id="inputField" placeholder="" />
     <button onclick="loadUrl()">go</button>
     <script>
