@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96"
+   height="96"
+   viewBox="0 0 25.4 25.4"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="ace.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.1230549"
+     inkscape:cx="97.500686"
+     inkscape:cy="50.11119"
+     inkscape:window-width="1440"
+     inkscape:window-height="760"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2719"
+       transform="matrix(0.72138958,0,0,0.72138958,3.5383523,3.5383523)">
+      <rect
+         style="fill:#aaccee;fill-opacity:1;stroke-width:0.621051"
+         id="rect231"
+         width="25.4"
+         height="25.4"
+         x="0"
+         y="0"
+         rx="7"
+         ry="7" />
+      <g
+         aria-label="#ACE"
+         id="text996"
+         style="font-size:8.35897px;stroke-width:2.63275">
+        <path
+           d="M 3.9941159,15.46093 H 3.0746292 L 3.3755521,14.232161 H 2.8155012 V 13.304316 H 3.6012443 L 3.96068,11.791342 H 3.3671932 v -0.927845 h 0.819179 L 4.512372,9.5260614 H 5.4318587 L 5.1058589,10.863497 H 5.7745764 L 6.1005762,9.5260614 H 7.0200629 L 6.6940631,10.863497 h 0.5015382 v 0.927845 H 6.4683709 l -0.3594357,1.512974 h 0.56841 v 0.927845 H 5.883243 L 5.5823201,15.46093 H 4.6628335 L 4.9637564,14.232161 H 4.2950388 Z M 4.520731,13.304316 H 5.1894485 L 5.5488842,11.791342 H 4.8801667 Z"
+           style="font-family:'0xProto Nerd Font';-inkscape-font-specification:'0xProto Nerd Font'"
+           id="path2660" />
+        <path
+           d="M 7.797454,15.46093 Q 8.2321204,13.555085 8.6835047,12.075547 9.1432481,10.587651 9.6531452,9.5260614 h 1.1033838 q 0.509897,1.0615896 0.961282,2.5494856 0.459743,1.479538 0.894409,3.385383 H 11.458683 Q 11.391813,15.143289 11.31658,14.834007 11.24971,14.524725 11.182837,14.223802 H 9.2268378 q -0.066872,0.300923 -0.1421025,0.610205 -0.066872,0.309282 -0.1337435,0.626923 z m 1.7052298,-2.348871 h 1.4043072 q -0.16718,-0.64364 -0.342718,-1.21205 -0.175538,-0.576769 -0.359436,-1.086666 -0.183897,0.509897 -0.3594355,1.086666 -0.1755383,0.56841 -0.3427177,1.21205 z"
+           style="font-family:'0xProto Nerd Font';-inkscape-font-specification:'0xProto Nerd Font'"
+           id="path2657" />
+        <path
+           d="m 15.638174,15.594673 q -1.220409,0 -1.914204,-0.802461 -0.685435,-0.81082 -0.685435,-2.273639 0,-0.986359 0.292564,-1.680153 0.292564,-0.702154 0.835897,-1.0699485 0.551692,-0.3761536 1.329076,-0.3761536 0.760666,0 1.278922,0.3510767 0.518256,0.3427174 0.827538,0.9947174 l -0.961281,0.56841 q -0.183898,-0.351077 -0.459744,-0.576769 -0.267487,-0.225692 -0.668717,-0.225692 -0.560051,0 -0.927846,0.518256 -0.359435,0.518256 -0.359435,1.46282 0,0.911127 0.367794,1.429383 0.376154,0.509898 1.028153,0.509898 0.401231,0 0.718872,-0.133744 0.326,-0.133743 0.618564,-0.359436 l 0.710512,0.936205 q -0.451384,0.384513 -0.944564,0.560051 -0.493179,0.167179 -1.086666,0.167179 z"
+           style="font-family:'0xProto Nerd Font';-inkscape-font-specification:'0xProto Nerd Font'"
+           id="path2654" />
+        <path
+           d="M 18.664129,15.46093 V 9.5260614 h 3.853485 V 10.587651 H 19.79259 v 1.253845 h 2.524409 v 1.061589 H 19.79259 v 1.496256 h 2.791896 v 1.061589 z"
+           style="font-family:'0xProto Nerd Font';-inkscape-font-specification:'0xProto Nerd Font'"
+           id="path2651" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke-width:1"
+         x="-65.980728"
+         y="82.903275"
+         id="text1102"><tspan
+           sodipodi:role="line"
+           id="tspan1100"
+           style="stroke-width:1"
+           x="-65.980728"
+           y="82.903275"></tspan></text>
+    </g>
+  </g>
+</svg>
