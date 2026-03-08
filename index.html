@@ -1,297 +1,205 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
 
-    <style>
-      html {
-        background: #000;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 0.8em;
-      }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-      a {
-        color: #fff;22
-      }
+<style>
 
-      #calendar {
-        backround: #eee;
-      }
+html{
+background:#000;
+color:#fff;
+font-family:sans-serif;
+font-size:0.8em;
+}
 
-    </style>
-  </head>
+a{
+color:#fff;
+}
 
-  <body onload="">
-    <div id="topbar">
-      <span>
-        <svg
-          id="clock"
-          xmlns="http://www.w3.org/2000/svg"22
-          width="100"
-          height="100"
-        >
-          <circle cx="50" cy="50" r="45" fill="#221" />
-          <line
-            id="hourHand"
-            x1="50"
-            y1="50"
-            x2="50"
-            y2="24"
-            stroke="#222"
-            stroke-width="4"
-          />
-          <line
-            id="minuteHand"
-            x1="50"
-            y1="50"
-            x2="50"
-            y2="14"
-            stroke="#222"
-            stroke-width="4"
-          />
-          <line
-            id="secondHand"
-            x1="50"
-            y1="55"
-            x2="50"
-            y2="10"
-            stroke="#222"
-            stroke-width="2"
-          />
-        </svg>
-      </span>
+#calendar{
+background:#eee;
+}
 
-      <span>
+</style>
 
-        
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg"
-       width="96" height="96" viewBox="0 0 96 96">
-    <rect width="96" height="96" fill="#000"/>
-    <text id="dayText"
-          x="44" y="52"
-          text-anchor="middle" dominant-baseline="middle"
-          font-family="system-ui, sans-serif"
-          font-size="40"
-          stroke-width="2px"
-          stroke="#07c" 
-      letter-spacing="2">
-          fill="#000"></text>
-  </svg>  
-      </span>
-      
-      </span>
-      
-      <a href="https://mail.google.com/"
-        ><img src="./svg/gmail.svg" alt="gmail"
-      /></a>
-      <a href="https://www.amazon.com/"
-        ><img src="./svg/amazon.svg" alt="amazon"
-      /></a>
-      <a href="https://www.youtube.com/"
-        ><img src="./svg/youtube.svg" alt="youtube"
-      /></a>
-      <a href="https://aws.amazon.com/console/"
-        ><img src="./svg/aws.svg" alt="aws"
-      /></a>
-      <a href="https://www.google.com"
-        ><img src="./svg/google.svg" alt="GoogleSearch"
-      /></a>
-      <a href="https://www.ebay.com"><img src="./svg/ebay.svg" alt="eBay" /></a>
-      <a
-        href="https://www.google.com/search?channel=fs&client=ubuntu&q=google+translate"
-        ><img src="./svg/translate.svg" alt="GTranslate"
-      /></a>
-      <a href="https://chat.openai.com/"
-        ><img src="./svg/chatgpt.svg" alt="chatGPT"
-      /></a>
-      <a href="https://www.nytimes.com/games/wordle/index.html"
-        ><img src="./svg/wordle.svg" alt="Wordle"
-      /></a>
-      <a href="https://sfbay.craigslist.org/"
-        ><img src="./svg/craigslist.svg" alt="Craigslist"
-      /></a>
-      <a
-        href="https://finance.yahoo.com/quotes/SPY,AMZN,NVDA,PLTR,NET,MSFT,AAPL,LMT,TXT,RTX,BA,GD/view/v1/"
-        ><img src="./svg/yahoofin.svg" alt="YFinance"
-      /></a>
-      <a href="https://github.com"><img src="./svg/github.svg" /></a>
-      <a
-        href="https://www.google.com/search?channel=fs&client=ubuntu&q=run+speed+test"
-        ><img src="./svg/speed.svg"
-      /></a>
-      <a href="https://jsfiddle.net"><img src="./svg/jsfiddle.svg" /></a>
-      <a href="https://www.google.com/logos/fnbx/solitaire/standalone.html"
-        ><img src="./svg/solitaire.svg"
-      /></a>
-      <a href="https://kogcyc.github.io/files/segno.html"
-        ><img src="./svg/segno.svg"
-      /></a>
-      <a href="https://www.google.com/maps"><img src="./svg/maps.svg" /></a>
-      <a href="https://kogcyc.github.io/kogapps/htmlFiddle/"
-        ><img src="./svg/htmlFiddle.svg"
-      /></a>
-      <a href="https://kogcyc.github.io/kogapps/svgFiddle/"
-        ><img src="./svg/svgFiddle.svg"
-      /></a>
-      <a href="https://www.mpb.com"><img src="./svg/mpb.svg" /></a>
-    <a href="https://play.tailwindcss.com/"><img src="./svg/tailwind.svg" /></a>
-      <a href="https://app.sendcutsend.com/customer#/quote"><img src="./svg/scs.svg" /></a>
-  <a href="https://chat.deepseek.com/"><img src="./svg/deepseek.svg" /></a>
-      <a href="https://www.wikipedia.org">
-    <img src="./svg/wikipedia.svg" />
-</a>
-      
-      
-      
-      
-<a href="https://kogcyc.github.io/files/test.html"><img src="./svg/newk96.svg" /></a>
+</head>
 
+<body>
 
-<a href="https://kogcyc.github.io/files/3color.html"><img src="./svg/ace.svg" /></a>
+<div id="topbar">
 
+<span>
 
+<svg id="clock"
+xmlns="http://www.w3.org/2000/svg"
+width="100"
+height="100">
 
+<circle cx="50" cy="50" r="45" fill="#221"/>
 
-<a href="https://kogcyc.github.io/files/OmegaNu.html"><img src="./svg/omega.svg" /></a>
+<line id="hourHand"
+x1="50" y1="50"
+x2="50" y2="24"
+stroke="#222"
+stroke-width="4"/>
 
-      <video
-  src="timer15s.mp4"
-  width="92"
-  height="92"
-  autoplay
-  loop
-  muted
-  playsinline
-></video>
+<line id="minuteHand"
+x1="50" y1="50"
+x2="50" y2="14"
+stroke="#222"
+stroke-width="4"/>
 
-      
-    </div>
-    <br /><br />
+<line id="secondHand"
+x1="50" y1="55"
+x2="50" y2="10"
+stroke="#222"
+stroke-width="2"/>
 
+</svg>
+
+</span>
+
+<span>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="96"
+height="96"
+viewBox="0 0 96 96">
+
+<rect width="96" height="96" fill="#000"/>
+
+<text id="dayText"
+x="48"
+y="52"
+text-anchor="middle"
+dominant-baseline="middle"
+font-family="system-ui, sans-serif"
+font-size="40"
+stroke-width="2"
+stroke="#07c"
+fill="#000"
+letter-spacing="2">
+</text>
+
+</svg>
+
+</span>
+
+<a href="https://mail.google.com/"><img src="./svg/gmail.svg" alt="gmail"></a>
+<a href="https://www.amazon.com/"><img src="./svg/amazon.svg" alt="amazon"></a>
+<a href="https://www.youtube.com/"><img src="./svg/youtube.svg" alt="youtube"></a>
+<a href="https://aws.amazon.com/console/"><img src="./svg/aws.svg" alt="aws"></a>
+<a href="https://www.google.com"><img src="./svg/google.svg" alt="GoogleSearch"></a>
+<a href="https://www.ebay.com"><img src="./svg/ebay.svg" alt="eBay"></a>
+<a href="https://www.google.com/search?q=google+translate"><img src="./svg/translate.svg" alt="GTranslate"></a>
+<a href="https://chat.openai.com/"><img src="./svg/chatgpt.svg" alt="chatGPT"></a>
+<a href="https://www.nytimes.com/games/wordle/index.html"><img src="./svg/wordle.svg" alt="Wordle"></a>
+<a href="https://sfbay.craigslist.org/"><img src="./svg/craigslist.svg" alt="Craigslist"></a>
+<a href="https://finance.yahoo.com/quotes/SPY,AMZN,NVDA,PLTR,NET,MSFT,AAPL,LMT,TXT,RTX,BA,GD/view/v1/"><img src="./svg/yahoofin.svg" alt="YFinance"></a>
+<a href="https://github.com"><img src="./svg/github.svg" alt="github"></a>
+<a href="https://www.google.com/search?q=run+speed+test"><img src="./svg/speed.svg" alt="speed"></a>
+<a href="https://jsfiddle.net"><img src="./svg/jsfiddle.svg" alt="jsfiddle"></a>
+<a href="https://www.google.com/logos/fnbx/solitaire/standalone.html"><img src="./svg/solitaire.svg" alt="solitaire"></a>
+<a href="https://kogcyc.github.io/files/segno.html"><img src="./svg/segno.svg" alt="segno"></a>
+<a href="https://www.google.com/maps"><img src="./svg/maps.svg" alt="maps"></a>
+
+<video
+src="timer15s.mp4"
+width="92"
+height="92"
+autoplay
+loop
+muted
+playsinline>
+</video>
+
+</div>
+
+<br><br>
 
 <input type="date">
-<br /><br />
-    
-    <div id="tool">
-      Tool Library<br />
-      510-981-6101<br />
-      M 10 - 6<br />
-      T 10 - 6<br />
-      W 12 - 6<br />
-      T 12 - 6<br />
-      F 10 - 6<br />
-      S 10 - 6<br />
-      S Closed
-    </div>
-    <br /><br />
 
-    <a href="https://raw.githubusercontent.com/kogcyc/files/main/json.json"
-      >files</a
-    ><br /><br /><br /><br />
+<br><br>
 
-    <img
-      src="./svg/matt.svg"
-      style="
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 92%;
-        max-width: 350px;
-      "
-    />
+<div id="tool">
+Tool Library<br>
+510-981-6101<br>
+M 10-6<br>
+T 10-6<br>
+W 12-6<br>
+T 12-6<br>
+F 10-6<br>
+S 10-6<br>
+S Closed
+</div>
 
-    <a href="https://www.wikipedia.org"><img src="./svg/blank.svg" /></a>
-    <a href="https://news.google.com"><img src="./svg/blank.svg" /></a>
-    <a href="https://keep.google.com"><img src="./svg/blank.svg" /></a>
-    <a href="https://www.amazon.com/Prime-Video/b?node=2676882011"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a href="https://maps.google.com"><img src="./svg/blank.svg" /></a
-    >https://raw.githubusercontent.com/kogcyc/files/main/json.json
-    <a
-      href="https://www.windy.com/-Rain-thunder-rain?rain,37.777,-121.745,9,m:eH1acJA"
-      ><img src="./svg/blank.svg"
-    /></a><svg width="96" height="96" xmlns="http://www.w3.org/2000/svg"><path d="M 6,48 C 48,2 48,94 90,48"s
-    <a href="https://www.homedepot.com"><img src="./svg/blank.svg" /></a>
-    <a
-      href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+berhttps://raw.githubusercontent.com/kogcyc/files/main/json.json keley"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a
-      href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+msp"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a
-      href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+paris"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a
-      href="https://www.google.com/search?channel=fs&client=ubuntu&q=weather+rome"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a href="https://azure.microsoft.com/en-us/"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a href="https://kogswellcycles.com"><img src="./svg/blank.svg" /></a>
-    <a href="https://jlcpcb.com"><img src="./svg/blank.svg" /></a>
-    <a href="https://www.aliexpress.us/"><img src="./svg/blank.svg" /></a>
-    <a href="https://www.pythonanywhere.com/user/kogswell/"
-      ><img src="./svg/blank.svg"
-    /></a>
-    <a href="https://wormhole.app/"><img src="./svg/blank.svg" /></a>
+<br><br>
 
-    <script>
-      function updateClock() {
-        const now = new Date()
+<a href="https://raw.githubusercontent.com/kogcyc/files/main/json.json">files</a>
 
-        const secondHand = document.getElementById("secondHand")
-        const minuteHand = document.getElementById("minuteHand")
-        const hourHand = document.getElementById("hourHand")
+<br><br><br><br>
 
-        const seconds = now.getSeconds()
-        const minutes = now.getMinutes()
-        const hours = now.getHours()
+<img
+src="./svg/matt.svg"
+style="display:block;margin:auto;width:92%;max-width:350px;">
 
-        const secondsAngle = (seconds / 60) * 360
-        const minutesAngle = ((minutes * 60 + seconds) / 3600) * 360
-        const hoursAngle =
-          ((hours * 3600 + minutes * 60 + seconds) / 43200) * 360
+<script>
 
-        secondHand.setAttribute("transform", `rotate(${secondsAngle} 50 50)`)
-        minuteHand.setAttribute("transform", `rotate(${minutesAngle} 50 50)`)
-        hourHand.setAttribute("transform", `rotate(${hoursAngle} 50 50)`)
+function updateClock(){
 
-        // Get the elements by their IDs
-        //var hourHand = document.getElementById("hourHand");
-        //var minuteHand = document.getElementById("minuteHand");
-        //var secondHand = document.getElementById("secondHand");
+const now = new Date()
 
-        // Change the 'stroke' color
-        hourHand.setAttribute("stroke", "#fff") // Change to your desired color
-        minuteHand.setAttribute("stroke", "#fff") // Change to your desired color
-        secondHand.setAttribute("stroke", "#f00") // Change to your desired color
-      }
+const secondHand=document.getElementById("secondHand")
+const minuteHand=document.getElementById("minuteHand")
+const hourHand=document.getElementById("hourHand")
 
-      setInterval(updateClock, 1000)
-    </script>
+const seconds=now.getSeconds()
+const minutes=now.getMinutes()
+const hours=now.getHours()
 
+const secondsAngle=(seconds/60)*360
+const minutesAngle=((minutes*60+seconds)/3600)*360
+const hoursAngle=((hours*3600+minutes*60+seconds)/43200)*360
 
-  <script>
-    const today = new Date().getDate().toString().padStart(2, "0");
-    document.getElementById("dayText").textContent = today;
-  </script>
+secondHand.setAttribute("transform",`rotate(${secondsAngle} 50 50)`)
+minuteHand.setAttribute("transform",`rotate(${minutesAngle} 50 50)`)
+hourHand.setAttribute("transform",`rotate(${hoursAngle} 50 50)`)
 
-    <input type="text" id="inputField" placeholder="" />
-    <button onclick="loadUrl()">go</button>
-    <script>
-      function loadUrl() {
-        var inputValue = document.getElementById("inputField").value
-        var url = "https://" + inputValue + ".up.railway.app"
-        window.location.href = url
-      }
-    </script>
-  </body>
+hourHand.setAttribute("stroke","#fff")
+minuteHand.setAttribute("stroke","#fff")
+secondHand.setAttribute("stroke","#f00")
+
+}
+
+updateClock()
+setInterval(updateClock,1000)
+
+</script>
+
+<script>
+
+const today=new Date().getDate().toString().padStart(2,"0")
+document.getElementById("dayText").textContent=today
+
+</script>
+
+<input type="text" id="inputField">
+<button onclick="loadUrl()">go</button>
+
+<script>
+
+function loadUrl(){
+
+var inputValue=document.getElementById("inputField").value
+var url="https://"+inputValue+".up.railway.app"
+
+window.location.href=url
+
+}
+
+</script>
+
+</body>
 </html>
