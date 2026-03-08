@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
   <rect width="96" height="96" fill="none"/>
-  <circle cx="48" cy="48" r="34" fill="#ccccbb"/>
-  <text x="48" y="64"
+  <circle cx="48" cy="48" r="34" fill="#bba"/>
+  <text x="47" y="64"
         text-anchor="middle"
         font-family="Linux Libertine, Georgia, Times, serif"
         font-size="42"
         font-weight="bold"
-        fill="#222222">W</text>
+        fill="#111">W</text>
 </svg>
