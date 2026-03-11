@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="96"
+   height="96"
+   viewBox="0 0 96 96"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="easyeda.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5531095"
+     inkscape:cx="160.9674"
+     inkscape:cy="43.139262"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Group 33</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <path
+     d="m 33.841295,59.192262 c 3.213784,0 5.8377,2.631049 5.8377,5.853824 0,3.243375 -2.603576,5.854025 -5.8377,5.854025 -3.234129,0 -5.837705,-2.61065 -5.837705,-5.854025 0,-3.222775 2.603576,-5.853824 5.837705,-5.853824 M 82.637979,39.080319 C 80.66496,37.10178 78.264788,35.592585 75.620532,34.715502 70.413381,21.497845 55.503853,14.991309 42.323253,20.212814 c -2.054387,0.815891 -3.986725,1.876758 -5.756343,3.182185 -1.99336,1.4684 -3.783319,3.222773 -5.288508,5.201309 -0.833959,-0.101968 -1.688258,-0.163382 -2.542557,-0.163382 -11.41098,0 -20.6658734,9.280772 -20.6658734,20.723864 0,8.934019 5.6749784,16.684994 13.7908094,19.540616 1.566212,5.160313 6.325874,8.89302 11.980514,8.89302 6.895403,0 12.509363,-5.629453 12.509363,-12.54434 0,-0.550525 -0.04068,-1.081056 -0.101704,-1.590991 l 17.63515,-8.893019 -0.142383,-0.285766 1.667915,-0.836087 -3.396852,-6.751709 -1.667916,0.836494 -0.142381,-0.285768 -17.614811,8.852631 c -2.25779,-2.223507 -5.349538,-3.590127 -8.746387,-3.590127 -5.044428,0 -9.37694,2.998405 -11.370304,7.302439 -4.617275,-2.73324 -7.078467,-8.301701 -5.654635,-13.768182 1.708596,-6.608724 8.461617,-10.566002 15.051916,-8.852428 1.200086,0.30596 2.359488,0.815892 3.417192,1.468605 3.010384,-9.117593 12.83481,-14.053944 21.906642,-11.035141 6.407235,2.141715 11.00417,7.812369 11.777107,14.543479 0.305107,-0.02059 0.630553,-0.04079 0.935662,-0.04079 5.329189,0 9.661701,4.344627 9.661701,9.688715 0,5.017533 -3.824001,9.198981 -8.827745,9.647926 h -7.098813 v 8.362894 h 7.464939 l 0.36613,-0.041 C 81.356532,68.942178 88.699429,60.23253 87.86547,50.29884 87.499343,46.0766 85.648361,42.099124 82.63798,39.080325"
+     id="Fill-17"
+     style="fill:#1765f6;fill-rule:evenodd;stroke:none;stroke-width:1.13811" />
+  <metadata
+     id="metadata302">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Group 33</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
