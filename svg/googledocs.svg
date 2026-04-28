@@ -6,32 +6,11 @@
    y="0px"
    viewBox="0 0 96 96"
    xml:space="preserve"
-   sodipodi:docname="googledocs.svg"
    width="96"
    height="96"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs3" /><sodipodi:namedview
-   id="namedview3"
-   pagecolor="#ffffff"
-   bordercolor="#000000"
-   borderopacity="0.25"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="1.8409091"
-   inkscape:cx="160.79012"
-   inkscape:cy="89.08642"
-   inkscape:window-width="1600"
-   inkscape:window-height="850"
-   inkscape:window-x="0"
-   inkscape:window-y="24"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="Layer_1" />
+   id="defs3" />
 <style
    type="text/css"
    id="style1">
@@ -41,7 +20,7 @@
 </style>
 <g
    id="Layer_5"
-   transform="matrix(0.81790694,0,0,0.81790694,21.826978,12.376281)">
+   transform="matrix(0.73932308,0,0,0.73932308,24.34166,15.833971)">
 	<path
    class="st0"
    d="M 58,88 H 6 C 2.7,88 0,85.3 0,82 V 6 C 0,2.7 2.7,0 6,0 h 36 l 22,22 v 60 c 0,3.3 -2.7,6 -6,6 z"
