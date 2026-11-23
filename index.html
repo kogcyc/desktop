@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,19 +8,19 @@
 
 <style>
 
-html{
-background:#132C3E;
-color:#fff;
-font-family:sans-serif;
-font-size:0.8em;
+html {
+    background: #132C3E;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.8em;
 }
 
-a{
-color:#fff;
+a {
+    color: #fff;
 }
 
-#calendar{
-background:#eee;
+#calendar {
+    background: #132C3E;
 }
 
 </style>
@@ -37,24 +38,24 @@ xmlns="http://www.w3.org/2000/svg"
 width="100"
 height="100">
 
-<circle cx="50" cy="50" r="45" fill="#221"/>
+<circle cx="50" cy="50" r="45" fill="#132C3E"/>
 
 <line id="hourHand"
 x1="50" y1="50"
 x2="50" y2="24"
-stroke="#222"
+stroke="#fff"
 stroke-width="4"/>
 
 <line id="minuteHand"
 x1="50" y1="50"
 x2="50" y2="14"
-stroke="#222"
+stroke="#fff"
 stroke-width="4"/>
 
 <line id="secondHand"
 x1="50" y1="55"
 x2="50" y2="10"
-stroke="#222"
+stroke="#f00"
 stroke-width="2"/>
 
 </svg>
@@ -63,12 +64,13 @@ stroke-width="2"/>
 
 <span>
 
-<svg xmlns="http://www.w3.org/2000/svg"
+<svg id="calendar"
+xmlns="http://www.w3.org/2000/svg"
 width="96"
 height="96"
 viewBox="0 0 96 96">
 
-<rect width="96" height="96" fill="#000"/>
+<rect width="96" height="96" fill="#132C3E"/>
 
 <text id="dayText"
 x="48"
@@ -77,9 +79,8 @@ text-anchor="middle"
 dominant-baseline="middle"
 font-family="system-ui, sans-serif"
 font-size="40"
-stroke-width="2"
-stroke="#07c"
-fill="#000"
+font-weight="500"
+fill="#F2E6C9"
 letter-spacing="2">
 </text>
 
@@ -109,8 +110,8 @@ letter-spacing="2">
 <a href="https://kogcyc.github.io/files/svgEDIT.html"><img src="./svg/svgemblem.svg" alt="svgEDIT"></a>
 <a href="https://www.easyeda.com/editor"><img src="./svg/easyeda.svg" alt="easyeda"></a>
 <a href="https://www.mpb.com/en-us"><img src="./svg/mpb.svg" alt="mpb"></a>
-  
-<a href="https://docs.google.com"><img src="./svg/googledocs.svg" alt="easyeda"></a>
+
+<a href="https://docs.google.com"><img src="./svg/googledocs.svg" alt="Google Docs"></a>
 
 <a href="https://kogcyc.github.io/files/cube.html">
 <video
@@ -131,7 +132,6 @@ playsinline>
 <input type="date">
 
 <br><br>
-
 
 <div id="tool">
 Tool Library<br>
@@ -157,41 +157,41 @@ style="display:block;margin:auto;width:92%;max-width:350px;">
 
 <script>
 
-function updateClock(){
+function updateClock() {
 
-const now = new Date()
+    const now = new Date();
 
-const secondHand=document.getElementById("secondHand")
-const minuteHand=document.getElementById("minuteHand")
-const hourHand=document.getElementById("hourHand")
+    const secondHand = document.getElementById("secondHand");
+    const minuteHand = document.getElementById("minuteHand");
+    const hourHand = document.getElementById("hourHand");
 
-const seconds=now.getSeconds()
-const minutes=now.getMinutes()
-const hours=now.getHours()
+    const seconds = now.getSeconds();
+    const minutes = now.getMinutes();
+    const hours = now.getHours();
 
-const secondsAngle=(seconds/60)*360
-const minutesAngle=((minutes*60+seconds)/3600)*360
-const hoursAngle=((hours*3600+minutes*60+seconds)/43200)*360
+    const secondsAngle = (seconds / 60) * 360;
+    const minutesAngle = ((minutes * 60 + seconds) / 3600) * 360;
+    const hoursAngle = ((hours * 3600 + minutes * 60 + seconds) / 43200) * 360;
 
-secondHand.setAttribute("transform",`rotate(${secondsAngle} 50 50)`)
-minuteHand.setAttribute("transform",`rotate(${minutesAngle} 50 50)`)
-hourHand.setAttribute("transform",`rotate(${hoursAngle} 50 50)`)
-
-hourHand.setAttribute("stroke","#fff")
-minuteHand.setAttribute("stroke","#fff")
-secondHand.setAttribute("stroke","#f00")
+    secondHand.setAttribute("transform", `rotate(${secondsAngle} 50 50)`);
+    minuteHand.setAttribute("transform", `rotate(${minutesAngle} 50 50)`);
+    hourHand.setAttribute("transform", `rotate(${hoursAngle} 50 50)`);
 
 }
 
-updateClock()
-setInterval(updateClock,1000)
+function updateCalendar() {
 
-</script>
+    const today = new Date().getDate().toString().padStart(2, "0");
 
-<script>
+    document.getElementById("dayText").textContent = today;
 
-const today=new Date().getDate().toString().padStart(2,"0")
-document.getElementById("dayText").textContent=today
+}
+
+updateClock();
+updateCalendar();
+
+setInterval(updateClock, 1000);
+setInterval(updateCalendar, 1000);
 
 </script>
 
@@ -200,26 +200,20 @@ document.getElementById("dayText").textContent=today
 
 <script>
 
-<code>  
-function loadUrl(){
+function loadUrl() {
 
-var inputValue=document.getElementById("inputField").value
-var url="https://"+inputValue+".up.railway.app"
-  </code>
-  
-window.location.href=url
+    var inputValue = document.getElementById("inputField").value;
+
+    var url = "https://" + inputValue + ".up.railway.app";
+
+    window.location.href = url;
 
 }
 
 </script>
 
-
-
-
-
-
 <pre style="font-size: 2em;"><code>
-  
+
 sudo mkdir -p /mnt/five
 sudo mount /dev/sda3 /mnt/five
 
@@ -230,8 +224,8 @@ magick -size 160x90 xc:transparent trans.png
 cd /usr/share/themes
 sudo mousepad /etc/lightdm/lightdm-gtk-greeter.conf
 
-xclip -selection clipboard -i %f	               >> clipboard
-xclip -selection clipboard -o > %f	             >> file
+xclip -selection clipboard -i %f               >> clipboard
+xclip -selection clipboard -o > %f             >> file
 
 sudo usermod -aG sudo firefox
 
@@ -249,11 +243,8 @@ sudo mousepad /etc/samba/smb.conf
 sudo smbpasswd -a matt
 sudo systemctl restart smbd
 
-
 </code></pre>
 
-
-  
-    
 </body>
 </html>
+```
